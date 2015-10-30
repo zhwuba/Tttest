@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_info"
+    android:layout_width="244.5dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/setting_feedback_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/uninstall_app_icon"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/uninstall_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.5dp"
+        android:textColor="@color/common_text_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/uninstall_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.5dp"
+        android:text="@string/uninstall_app"
+        android:textColor="@color/dialog_content_color"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_height"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/uninstall_dialog_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/date_button_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/dialog_button_gray_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="@dimen/common_divider_height"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/uninstall_dialog_ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/date_button_bg"
+            android:text="@string/uninstall"
+            android:gravity="center"
+            android:textColor="@color/common_green_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

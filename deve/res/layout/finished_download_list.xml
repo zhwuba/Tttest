@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_show_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/onecolview_item_icon_margin"
+   		android:layout_marginTop="@dimen/onecolview_item_icon_margin"
+   		android:layout_marginRight="@dimen/onecolview_item_name_margin_left" >
+
+        <ImageView
+            android:id="@+id/list_iv1"
+            android:layout_width="@dimen/common_app_icon_size"
+            android:layout_height="@dimen/common_app_icon_size"
+            android:src="@drawable/picture_bg1_big" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_id2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_desc_top_margin"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/list_download_bt"
+            android:layout_toRightOf="@+id/list_iv1" >
+
+            <TextView
+                android:id="@+id/list_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_name_color"
+	         	android:textSize="@dimen/app_list_name_size" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_id3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/list_tv1"
+                android:layout_marginTop="5dp" >
+                <TextView
+                    android:id="@+id/list_version"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+                    android:textColor="@color/app_desc_color"
+        			android:textSize="@dimen/common_app_gray_text_size"
+        			android:maxWidth="120dp"
+        			android:singleLine="true"
+        			android:ellipsize="end"
+                    android:text="@string/detail_version" />
+                <TextView
+	                android:id="@+id/list_tv5"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/app_desc_top_margin"
+	                android:singleLine="true"
+	                android:ellipsize="end"
+	                android:layout_toRightOf="@+id/list_version"
+	                android:textColor="@color/app_desc_color"
+        			android:textSize="@dimen/common_app_gray_text_size" />
+            </RelativeLayout>            
+        </RelativeLayout>
+
+        <TextView
+            style="@style/common_install_btn_style"
+            android:id="@+id/list_download_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/list_downloaded_hide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dip"
+        android:visibility="gone"
+        android:orientation="horizontal"  >
+
+		<TextView
+		    android:id="@+id/list_downloaded_hide_del"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/common_app_gray_text_size"
+		    android:textColor="@color/common_func_color"
+		    android:text="@string/download_item_delete"
+		    android:background="#00000000"
+		    android:drawableLeft="@drawable/common_del"
+		    android:drawablePadding="5dip" />
+
+		<TextView
+		    android:id="@+id/list_downloaded_hide_detail"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/dm_hide_btns_distance"
+		    android:textSize="@dimen/common_app_gray_text_size"
+		    android:textColor="@color/common_func_color"
+		    android:text="@string/download_item_detail"
+		    android:background="#00000000"
+		    android:drawableLeft="@drawable/common_detail"
+		    android:drawablePadding="5dip" />
+
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/list_downloaded_hide_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_gravity="center"
+        android:background="@drawable/desc_more"
+        android:orientation="horizontal"/>
+    
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_list_divider_margin"
+        android:background="@color/common_bg">
+    </View>
+</LinearLayout>

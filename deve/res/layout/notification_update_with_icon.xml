@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp" >
+
+    <TextView
+        android:id="@+id/kubiPlace"
+        android:layout_width="5dp"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/notifyIcon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/kubiPlace"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/notifyTitle"
+        style="@style/NotificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/notifyIcon"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toRightOf="@id/notifyIcon"
+        android:text="5款应用可更新" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notifyTitle"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_toRightOf="@id/notifyIcon"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/updateIcon1"
+            android:layout_width="@dimen/notify_ipdateapp_icon_height"
+            android:layout_height="@dimen/notify_ipdateapp_icon_height"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/updateIcon2"
+            android:layout_width="@dimen/notify_ipdateapp_icon_height"
+            android:layout_height="@dimen/notify_ipdateapp_icon_height"
+            android:layout_marginLeft="7dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/updateIcon3"
+            android:layout_width="@dimen/notify_ipdateapp_icon_height"
+            android:layout_height="@dimen/notify_ipdateapp_icon_height"
+            android:layout_marginLeft="7dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/updateIcon4"
+            android:layout_width="@dimen/notify_ipdateapp_icon_height"
+            android:layout_height="@dimen/notify_ipdateapp_icon_height"
+            android:layout_marginLeft="7dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/updateIcon5"
+            android:layout_width="@dimen/notify_ipdateapp_icon_height"
+            android:layout_height="@dimen/notify_ipdateapp_icon_height"
+            android:layout_marginLeft="7dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/updateDescript"
+            style="@style/NotificationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/notifyIcon"
+            android:text="...有更新" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_all_btn"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/notify_update_btn_bg"
+        android:text="@string/update"
+        android:textColor="#78ad46"
+        android:textSize="14sp" />
+
+</RelativeLayout>

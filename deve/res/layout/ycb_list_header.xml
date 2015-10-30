@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/sort_bg_normal"
+    >
+    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:text="为您找到以下山寨应用,您可以点击替换成官方正式版本"
+	    android:textSize="@dimen/sp12"
+	    android:textColor="@color/gray"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sort_bg_select"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/ycb_item_icon"
+        android:layout_width="@dimen/common_app_icon_size"
+        android:layout_height="@dimen/common_app_icon_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/picture_bg1_big" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ycb_item_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18" />
+
+    <RelativeLayout
+        android:id="@+id/replace_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dp" >
+
+        <ImageView
+            android:id="@+id/list_download_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:duplicateParentState="true"
+            android:src="@drawable/soft_list_finish_update_selector" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_download_bt"
+            android:layout_centerHorizontal="true"
+            android:text="@string/update_apk"
+            android:textColor="@color/gray"
+            android:textSize="12sp" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

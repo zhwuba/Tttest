@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <View 
+        android:id="@+id/left_view"
+        android:layout_width="@dimen/common_margin"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"/>
+    
+    <View 
+        android:id="@+id/right_view"
+        android:layout_width="@dimen/common_margin"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"/>
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="@dimen/small_title_name_size"
+        android:textColor="@color/discover_main_title"
+        android:layout_toRightOf="@id/left_view"
+        android:layout_toLeftOf="@id/right_view"
+        android:padding="@dimen/discover_item_padding"
+        android:background="@color/white"/>
+    
+    <ImageView
+        android:id="@+id/topic_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/discover_topic_big_height"
+        android:scaleType="fitXY"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/left_view"
+        android:layout_toLeftOf="@id/right_view" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic_img"
+        android:paddingLeft="@dimen/discover_topic_small_left"
+        android:paddingRight="@dimen/discover_item_padding"
+        android:paddingTop="@dimen/discover_topic_small_top"
+        android:paddingBottom="@dimen/discover_topic_small_top"
+        android:layout_toRightOf="@id/left_view"
+        android:layout_toLeftOf="@id/right_view"
+        android:background="@color/white" >
+        
+        <ImageView
+            android:id="@+id/left_topic"
+            android:layout_width="@dimen/discover_topic_small_size"
+            android:layout_height="@dimen/discover_topic_small_size"
+            android:layout_marginRight="@dimen/discover_item_padding"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/middle_topic"
+            android:layout_width="@dimen/discover_topic_small_size"
+            android:layout_height="@dimen/discover_topic_small_size"
+            android:layout_toRightOf="@id/left_topic"
+            android:layout_marginRight="@dimen/discover_item_padding"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/right_topic"
+            android:layout_width="@dimen/discover_topic_small_size"
+            android:layout_height="@dimen/discover_topic_small_size"
+            android:layout_toRightOf="@id/middle_topic"
+            android:layout_marginRight="@dimen/discover_item_padding"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/right_topic"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_topic" />
+        
+        <ImageView
+            android:id="@+id/topic_look_at_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/novel_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_app_divider_height"
+        android:layout_below="@id/bottom"/>
+    
+</RelativeLayout>

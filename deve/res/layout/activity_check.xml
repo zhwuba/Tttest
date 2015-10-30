@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.market.view.CommonSubtitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="@string/home_title_check_my"
+        android:background="@color/common_subtitle_bg" >
+    </com.market.view.CommonSubtitleView>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/check_logo_margin_top"
+        android:src="@drawable/check_activity_logo" />
+
+    <TextView
+        android:id="@+id/tvHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/check_hint_nargin_top"
+        android:text="@string/check_ing_hint"
+        android:textColor="#989898"
+        android:textSize="@dimen/check_hint_text_size"
+        android:visibility="invisible" />
+
+    <com.market.view.CheckView
+        android:id="@+id/cvProgress"
+        android:layout_width="@dimen/check_view_width"
+        android:layout_height="@dimen/check_view_height"
+        android:layout_marginTop="@dimen/check_view_margin_top" />
+
+    <TextView
+        android:id="@+id/tvResultHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/check_result_hint_margin_top"
+        android:text="@string/check_result_hint"
+        android:textColor="#ffa300"
+        android:textSize="@dimen/check_result_hint_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvResultDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/check_result_detail_margin_top"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/check_result_detail"
+        android:textColor="#686868"
+        android:textSize="@dimen/check_result_detail_text_size"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/check_share_btn_margin_top"
+        android:background="@drawable/selector_check_share_btn"
+        android:visibility="gone" />
+
+</LinearLayout>

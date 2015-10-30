@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <com.market.view.CommonSubtitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="@string/personalInfo_address_title_editAddress" 
+        android:background="@color/common_subtitle_bg">
+    </com.market.view.CommonSubtitleView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_NickName"
+        android:layout_width="@dimen/personalinfo_relative_width"
+        android:layout_height="@dimen/personalinfo_relative_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/personalinfo_address_margin_top"
+        android:background="@drawable/account_input_bg" >
+
+        <TextView
+            android:id="@+id/tip_Name"
+            android:layout_width="@dimen/personalinfo_tip_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:gravity="right"
+            android:text="@string/personalInfo_address_contacts"
+            android:textColor="@color/personalinfo_tip_color"
+            android:textSize="@dimen/account_content_text_size" />
+
+        <View
+            android:id="@+id/divide_name"
+            android:layout_width="@dimen/personalinfo_divide_width"
+            android:layout_height="@dimen/personalinfo_divide_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:layout_toRightOf="@id/tip_Name"
+            android:background="@drawable/personalinfo_divider" />
+
+        <ImageView
+            android:id="@+id/img_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/personalinfo_common_margin"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:src="@drawable/image_delete" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_name"
+            android:layout_toRightOf="@id/divide_name"
+            android:background="@null"
+            android:hint="@string/personalInfo_address_contacts_tip"
+            android:longClickable="false"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/common_text_color"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/personalinfo_relative_width"
+        android:layout_height="@dimen/personalinfo_relative_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/personalinfo_relative_margin"
+        android:background="@drawable/account_input_bg" >
+
+        <TextView
+            android:id="@+id/tip_phone"
+            android:layout_width="@dimen/personalinfo_tip_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:gravity="right"
+            android:text="@string/personalInfo_address_contactsInfo"
+            android:textColor="@color/personalinfo_tip_color"
+            android:textSize="@dimen/account_content_text_size" />
+
+        <View
+            android:id="@+id/divide_phone"
+            android:layout_width="@dimen/personalinfo_divide_width"
+            android:layout_height="@dimen/personalinfo_divide_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:layout_toRightOf="@id/tip_phone"
+            android:background="@drawable/personalinfo_divider" />
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/personalinfo_common_margin"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:src="@drawable/image_delete" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/divide_phone"
+            android:text="+86"
+            android:textColor="@color/personalinfo_tip_color"
+            android:textSize="@dimen/account_content_text_size" />
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/personalinfo_phone_margin_left"
+            android:layout_toLeftOf="@+id/img_phone"
+            android:layout_toRightOf="@id/textView5"
+            android:background="@null"
+            android:hint="@string/personalInfo_address_contactsInfo_tip"
+            android:longClickable="false"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/common_text_color"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/personalinfo_relative_width"
+        android:layout_height="@dimen/personalinfo_address_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/personalinfo_relative_margin"
+        android:background="@drawable/account_input_bg" >
+
+        <TextView
+            android:id="@+id/tip_address"
+            android:layout_width="@dimen/personalinfo_tip_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:gravity="right"
+            android:text="@string/personalInfo_address_deliveryAddress"
+            android:textColor="@color/personalinfo_tip_color"
+            android:textSize="@dimen/account_content_text_size" />
+
+        <View
+            android:id="@+id/divide_address"
+            android:layout_width="@dimen/personalinfo_divide_width"
+            android:layout_height="@dimen/personalinfo_divide_height_address"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:layout_toRightOf="@id/tip_address"
+            android:background="@drawable/personalinfo_divider" />
+
+        <ImageView
+            android:id="@+id/img_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/personalinfo_common_margin"
+            android:layout_marginRight="@dimen/personalinfo_common_margin"
+            android:src="@drawable/image_delete" />
+
+        <EditText
+            android:id="@+id/editText_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_address"
+            android:layout_toRightOf="@id/divide_address"
+            android:background="@null"
+            android:hint="@string/personalInfo_address_deliveryAddress_tip"
+            android:longClickable="false"
+            android:padding="2dp"
+            android:textColor="@color/common_text_color"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size" >
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="@dimen/personalinfo_relative_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/personalinfo_relative_margin"
+        android:text="@string/personalInfo_address_instruction"
+        android:textColor="@color/personalinfo_tip_color"
+        android:textSize="@dimen/account_content_text_size" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/personalinfo_relative_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/personalinfo_relative_margin"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/personalinfo_button_width"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_back_bg"
+            android:text="@string/return_introduction"
+            android:textColor="@color/personalinfo_tip_color" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="@dimen/personalinfo_button_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personalinfo_button_margin_left"
+            android:background="@drawable/btn_base_login"
+            android:text="@string/save"
+            android:textColor="@drawable/btn_base_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

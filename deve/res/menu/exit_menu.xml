@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/exit_account_menu"
+        android:title="@string/user_center_login"
+        />
+    <!--  
+    <item
+        android:id="@+id/checkin_account_menu"
+        android:title="解除签到"
+        />
+     -->
+</menu>

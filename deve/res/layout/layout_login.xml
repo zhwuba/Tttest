@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <requestFocus />
+
+    <com.market.view.CommonSubtitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:tag="@string/account_login"
+        android:visibility="invisible" 
+        android:background="@color/common_subtitle_bg">
+    </com.market.view.CommonSubtitleView>
+
+    <View
+        android:id="@+id/viewAnimationSpace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_animation_space" />
+
+    <LinearLayout
+        android:id="@+id/rlLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/logo_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_logo_height_register" >
+
+            <ImageView
+                android:id="@+id/logo_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo_login" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name_linearLayout"
+            android:layout_width="@dimen/account_input_box_width"
+            android:layout_height="@dimen/account_input_box_height"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/account_input_bg"
+            android:paddingLeft="@dimen/account_input_box_padding"
+            android:paddingRight="@dimen/account_input_box_padding" >
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/support_name"
+                android:inputType="phone"
+                android:longClickable="false"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textColor="@color/common_text_color"
+                android:textColorHint="@color/account_hint_color"
+                android:textSize="@dimen/account_content_text_size"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/code_linearLayout"
+            android:layout_width="@dimen/account_input_box_width"
+            android:layout_height="@dimen/account_input_box_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/account_input_box_margin"
+            android:background="@drawable/account_input_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/account_input_box_padding"
+            android:paddingRight="@dimen/account_input_box_padding" >
+
+            <TextView
+                android:id="@+id/forget_code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/forget_code"
+                android:textColor="@drawable/btn_base_text_color"
+                android:textSize="@dimen/account_content_text_size" />
+
+            <EditText
+                android:id="@+id/login_code"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/forget_code_btn"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/input_code"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textColor="@color/common_text_color"
+                android:textColorHint="@color/account_hint_color"
+                android:textSize="@dimen/account_content_text_size"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="@dimen/account_input_box_width"
+            android:layout_height="@dimen/account_input_box_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/account_input_box_margin"
+            android:background="@drawable/btn_base_login"
+            android:onClick="handleLogin"
+            android:text="@string/zhuoyou_login"
+            android:textColor="@drawable/btn_base_text_color"
+            android:textSize="@dimen/account_login_text_size" />
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/account_text_margin_top" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/has_no_account"
+                android:textColor="@color/about_text_color"
+                android:textSize="@dimen/account_content_text_size" />
+
+            <TextView
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textColor="@drawable/btn_base_text_color"
+                android:textSize="@dimen/account_content_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/account_text_margin_top" >
+
+            <Button
+                android:id="@+id/login_btn_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_btn_qq_height"
+                android:layout_marginRight="@dimen/account_qq_sina_margin"
+                android:background="@null"
+                android:drawableLeft="@drawable/qq_icon"
+                android:drawablePadding="@dimen/account_input_box_margin"
+                android:text="@string/title_activity_main_qq"
+                android:textColor="@color/account_text_bg"
+                android:textSize="@dimen/qq_sina_login_font_size" />
+
+            <Button
+                android:id="@+id/login_btn_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_btn_qq_height"
+                android:background="@null"
+                android:drawableLeft="@drawable/sina_icon"
+                android:drawablePadding="@dimen/account_input_box_margin"
+                android:text="@string/title_activity_main_sina"
+                android:textColor="@color/account_text_bg"
+                android:textSize="@dimen/qq_sina_login_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

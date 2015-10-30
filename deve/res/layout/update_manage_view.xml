@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+	<com.market.view.CommonSubtitleView
+	    android:id="@+id/update_title"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="@string/soft_update_manage"
+        android:background="@color/common_subtitle_bg">
+	</com.market.view.CommonSubtitleView>
+
+	<View 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_divider_height"
+        android:layout_marginLeft="@dimen/app_list_divider_margin"
+        android:layout_marginRight="@dimen/app_list_divider_margin"
+        android:background="@drawable/line"/>
+	
+    <RelativeLayout
+        android:id="@+id/update_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </RelativeLayout>
+</LinearLayout>

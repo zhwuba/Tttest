@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/common_bg"
+    android:visibility="visible" >
+
+    <ListView
+        android:id="@+id/recommmendation_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarSize="@dimen/scroll_width" 
+    	android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+    	android:scrollbarThumbHorizontal="@drawable/scrollbar_vertical_thumb"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:clipToPadding="false"
+        android:visibility="gone" />
+        
+    <include
+        android:id="@+id/search_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/progress_bar_intern"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/refresh_linearLayout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/maybelike_no_data"
+            android:textColor="@color/list_item_color" />
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minHeight="0dip"
+            android:minWidth="0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/refresh_btn_bg"
+            android:textSize="@dimen/refresh_btn_size"
+            android:text="@string/menu_refresh"
+            android:textColor="@color/common_app_install_color" />
+    </LinearLayout>
+
+</RelativeLayout>

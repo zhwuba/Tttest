@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_heigh">50dp</dimen>
+    <dimen name="title_logo_margin">13dp</dimen>
+    <dimen name="tab_heigh">30dip</dimen>
+    <dimen name="bottom_tab_text_size">14dp</dimen>
+    <dimen name="hot_word_top_padding">2dp</dimen>
+    <dimen name="install_button_width">59dip</dimen>
+    <dimen name="install_download_width">72dp</dimen>
+    <dimen name="install_button_height">27dip</dimen>
+    <dimen name="install_button_text_size">12sp</dimen>
+    <dimen name="onekey_install_move_heigh">270dip</dimen>
+    <dimen name="guide_startbtn_margin_bottom">55dp</dimen>
+    <dimen name="ad_bar_height">151.5dp</dimen>
+    <dimen name="home_special_btns_padding_left">6dp</dimen>
+    <dimen name="indicator_height">10px</dimen>
+    <dimen name="indicator_width">18px</dimen>
+    <dimen name="floating_view_top_margin">500dp</dimen>
+    <dimen name="app_detail_recommend_margin">6.3dp</dimen>
+    <dimen name="update_icon_margin_top">7.5dp</dimen>
+    <dimen name="update_btn_margin_right">10.5dp</dimen>
+    <dimen name="update_economized_notify">14sp</dimen>
+    <dimen name="particular_bottom_bar_height">55.5dp</dimen>
+    <dimen name="myself_update_height">81dp</dimen>
+    
+    <!-- 壁纸 -->
+    <dimen name="wallpaper_item_height">189dp</dimen>
+    <dimen name="wallpaper_item_width">107dp</dimen>
+    <dimen name="wallpaper_assort_height">109dp</dimen>
+    <dimen name="wallpaper_assort_width">169dp</dimen>
+    
+    <!-- xdyu add for classification -->
+    <dimen name="hot_category_layout_height">90dp</dimen>
+    
+    <dimen name="category_item_text_size">13sp</dimen>
+    <dimen name="category_shape_stroke_width">0.3px</dimen>
+    <dimen name="category_item_text_width">75dp</dimen>
+    <dimen name="category_item_text_height">29dp</dimen>
+    
+    <!-- xdyu add for search -->
+    <dimen name="search_edittext_height">36dp</dimen>
+    <dimen name="search_text_size">16sp</dimen>
+    <dimen name="hotword_margin_top">4dp</dimen>
+    <dimen name="hotword_margin_padding">6.7dp</dimen>
+    <dimen name="hotword_column_space">5dp</dimen>
+    <dimen name="change_btn_margin_top">8.5dp</dimen>
+    <dimen name="shake_btn_margin_top">16.5dp</dimen>
+    <dimen name="change_btn_text_size">16sp</dimen>
+	<dimen name="icno_padding">5dp</dimen>    
+	<dimen name="hotword_size">12.5sp</dimen>  
+	<dimen name="sub_title_margin_right">6dp</dimen>      
+    <dimen name="grid_item_height">46dp</dimen>
+    <dimen name="hoticon_size">35dp</dimen>
+    <dimen name="animtext_margin_left">10dp</dimen>
+    
+    <!-- added by nnzhang for setting -->
+    <dimen name="setting_classify_text_size">12sp</dimen>
+    <dimen name="setting_item_text_size">12sp</dimen>
+    <dimen name="setting_item_button_size">15sp</dimen>
+    <dimen name="setting_item_button_margin">21dp</dimen>
+    <dimen name="setting_feedback_width">320dp</dimen>
+    <dimen name="setting_feedback_margin">9dp</dimen>
+    <dimen name="setting_feedback_item_width">303dp</dimen>
+    <dimen name="setting_feedback_title_height">46.5dp</dimen>
+    <dimen name="setting_feedback_linearlayout_margin">13.5dp</dimen>
+    <dimen name="setting_feedback_linearlayout_margin_transverse">16.5dp</dimen>
+    <dimen name="setting_feedback_title_text_size">15sp</dimen>
+    <dimen name="setting_feedback_opinion_text_size">13sp</dimen>
+    <dimen name="setting_feedback_suggestion_edittext_heigth">90dp</dimen>
+    <dimen name="setting_feedback_submit_heigth">30dp</dimen>
+    <dimen name="setting_feedback_item_height">48dp</dimen>
+    
+    <!-- 进入市场加载页，"正在加载..."bottom高度 -->
+    <dimen name="market_enter_downloading_height">140dp</dimen>
+    <!-- 单列图片top -->
+    <dimen name="common_icon_top_margin">9dp</dimen>
+    <dimen name="common_icon_left_margin">9dp</dimen>
+    <dimen name="sort_text_size">17dp</dimen>
+    <dimen name="app_desc_top_margin">10.5dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+    
+    <!-- yudx added for OneColView -->
+    <dimen name="app_list_name_size">15sp</dimen>
+    <dimen name="app_divide_height">11dp</dimen>
+    <dimen name="app_divide_margin_top">2dp</dimen>
+    <dimen name="app_list_common_margin">15dp</dimen>
+    <dimen name="app_list_name_margin_top">16.5dp</dimen>
+    <dimen name="app_list_divider_margin">10dp</dimen>
+    <dimen name="app_list_name_max_width">120dp</dimen>
+    <!-- 浮动view大小 -->
+    <dimen name="floating_view_size">43dp</dimen>
+    <!-- 搜索返回图片大小 -->
+    <dimen name="search_back_icno_size">36.5dp</dimen>
+    
+    <!-- yudx added for sliding tab -->
+    <dimen name="sliding_tab_text_size">14sp</dimen>
+    
+    <dimen name="default_pic_item_width">360dp</dimen>
+    <dimen name="default_pic_item_height">153.3dp</dimen>
+    
+    <!-- dxyu add for home -->
+    <dimen name="app_name_text_size">14sp</dimen>
+    <dimen name="home_app_name_margin_top">7.5dp</dimen>
+    <dimen name="home_app_install_margin_top">3dp</dimen>
+    <dimen name="home_app_size_margin_top">1.5dp</dimen>
+    <dimen name="scroll_width">4dp</dimen>
+    
+    <!-- 装机必备 -->
+    <dimen name="group_indicator_height">22dp</dimen>
+    
+    <!-- 飙升排名变化 -->
+    <dimen name="fastrising_rank_change_text">14sp</dimen>
+    <dimen name="fastrising_rank_change_margin_left">7.5dp</dimen>
+    <dimen name="fastrising_rank_change_appname_max_width">80dp</dimen>
+    
+    <dimen name="refresh_btn_size">15sp</dimen>
+    
+    <!-- usercenter -->
+    <dimen name="myself_user_name_margin_top">7.5dp</dimen>
+    <dimen name="myself_user_score_margin_top">3.5dp</dimen>
+    <dimen name="myself_user_layout_height">213dp</dimen>
+    <dimen name="mine_campaign_text_max_width">61.5dp</dimen>
+    <dimen name="mine_campaign_text_margin_top">18dp</dimen>
+    <dimen name="mine_campaign_text_size">13.3sp</dimen>
+	<dimen name="myself_user_logo_width">85.5dp</dimen>
+	<dimen name="mine_campain_image_width">55dp</dimen>
+	<dimen name="myself_entry_center_size">12sp</dimen>
+	<dimen name="app_update_text_margin_top">22dp</dimen>
+
+    <!-- 一键安装 -->
+    <dimen name="app_detail_favorite_btn_width">60dp</dimen>
+    <dimen name="app_detail_favorite_btn_height">33dp</dimen>
+    <dimen name="app_detail_download_btn_width">180dp</dimen>
+    
+    <dimen name="qq_sina_login_font_size">16sp</dimen>
+    <dimen name="app_detail_name_max_width">180dp</dimen>
+    <!-- 分类A/B样式 -->
+    <dimen name="category_title_size">12sp</dimen>
+    <dimen name="category_hot_text_size">13.5sp</dimen>
+    <dimen name="category_item_image_size">34.66dp</dimen>
+    <dimen name="category_title_margin">15dp</dimen>
+    <dimen name="category_a_title_margin_top">12dp</dimen>
+    <dimen name="category_a_title_margin_bottom">8dp</dimen>
+    <dimen name="category_a_hot_icon_size">43.3dp</dimen>
+    <dimen name="category_a_hot_text_padding">7dp</dimen>
+    <dimen name="category_a_item_height">63dp</dimen>
+    <dimen name="category_a_item_text_margin">12dp</dimen>
+    <dimen name="category_a_item_text_size">15dp</dimen>
+    <dimen name="category_b_title_margin_top">12dp</dimen>
+    <dimen name="category_b_title_margin_bottom">9dp</dimen>
+    <dimen name="category_b_hot_item_space">3dp</dimen>
+    <dimen name="category_b_hot_item_height">45dp</dimen>
+    <dimen name="category_b_layout_margin">12dp</dimen>
+    <dimen name="category_b_hot_icon_size">28dp</dimen>
+    <dimen name="category_b_item_space">4dp</dimen>
+    <dimen name="category_b_item_min_height">91.5dp</dimen>
+    <dimen name="category_b_icon_margin_left">25dp</dimen>
+    <dimen name="category_b_item_text_margin">7dp</dimen>
+    <dimen name="category_b_item_space_margin">11dp</dimen>
+    <dimen name="category_b_item_sub_text_size">12sp</dimen>
+    <dimen name="category_a_layout_margin">9.75dp</dimen>
+    <dimen name="category_a_layout_h">84dp</dimen>
+    <dimen name="category_title_p">5.25dp</dimen>
+    <!-- 下面是默认分类中用到的 -->
+    <dimen name="hot_category_icon_margin_top">22px</dimen>
+    <dimen name="hot_category_icon_margin_bottom">12px</dimen>
+    <dimen name="hot_category_icno_size">43.3dp</dimen>
+    <dimen name="hot_category_text_size">13.5sp</dimen>
+    <dimen name="category_title_height">28dp</dimen>
+    <dimen name="category_item_image_size_d">29.3dp</dimen>
+    
+    <dimen name="attach_list_name_max_size">170dp</dimen>
+    <dimen name="attach_list_name_max_size_normal">200dp</dimen>
+    
+    <!-- 安装完成状态栏提醒  -->
+    <dimen name="dm_installed_tip">110dp</dimen>
+    <dimen name="dm_installed_icon_size">50dp</dimen>
+    
+    <!-- manage -->
+    <dimen name="manage_gird_item_height">105dp</dimen>
+    <dimen name="manage_gird_middle_margin">6dp</dimen>
+    <dimen name="manage_recode_margin">10dp</dimen>
+    <dimen name="manage_update_icon_size">16.5dp</dimen>
+    <dimen name="manage_update_icon_margin">6dp</dimen>
+    <dimen name="manage_user_name_edit_margin_top">81dp</dimen>
+    
+    <!-- 发现  -->
+	<dimen name="discover_item_divider_height">6dp</dimen>
+	<dimen name="discover_item_padding">12dp</dimen>
+	<dimen name="discover_item_width">340.5dp</dimen>
+	<dimen name="discover_title_height">33dp</dimen>
+	<dimen name="discover_topic_big_height">145.5dp</dimen>
+	<dimen name="discover_topic_small_top">15dp</dimen>
+	<dimen name="discover_topic_small_left">10.5dp</dimen>
+	<dimen name="discover_topic_small_size">34.5dp</dimen>
+	<dimen name="discover_wallpaper_height">148.5dp</dimen>
+	<dimen name="discover_wallpaper_width">83.5dp</dimen>
+	<dimen name="discover_wallpaper_layout_padding">6.5dp</dimen>
+	<dimen name="discover_wallpaper_image_margin">4.5dp</dimen>
+	<dimen name="discover_wallpaper_item_height">155dp</dimen>
+	<dimen name="discover_wallpaper_item_bottom">9.33dp</dimen>
+	<dimen name="discover_app_item_height">129dp</dimen>
+	<dimen name="discover_app_item_bottom">10dp</dimen>
+	<dimen name="discover_app_text_top">7.5dp</dimen>
+	<dimen name="discover_app_install_top">6dp</dimen>
+	<dimen name="discover_app_padding">13.5dp</dimen>
+	<dimen name="discover_novel_layout_padding">2dp</dimen>
+    <dimen name="discover_novel_image_margin">11.5dp</dimen>
+    <dimen name="discover_novel_item_height">151.5dp</dimen>
+    <dimen name="discover_item_arrow_padding">6dp</dimen>
+    <dimen name="discover_novel_cover_img_width">75dp</dimen>    
+    <dimen name="discover_novel_cover_img_height">90dp</dimen>  
+    <dimen name="discover_icon_margin_text_left">3dp</dimen>
+    <dimen name="small_title_name_size">12sp</dimen>
+    
+    <!-- common app icon and install button -->
+    <dimen name="common_app_install_width">66dp</dimen>
+    <dimen name="common_app_install_height">25.5dp</dimen>
+    <dimen name="common_app_install_size">13.5sp</dimen>
+    <dimen name="common_app_icon_size">67.5dp</dimen>
+    <dimen name="common_app_gray_text_size">12.5sp</dimen> <!-- 其他所有灰色文字，如描述，APP大小，下载次数，删除，详情，版本号等 -->
+    <dimen name="common_app_divider_height">6dp</dimen> <!--  分割线的高度 -->
+    
+    <dimen name="mine_user_logo_margin_top">40dp</dimen>
+    
+    <dimen name="ignore_app_btn_width">72dp</dimen>
+    
+    <!-- 精选 横排三个应用 -->
+	<dimen name="home_item_1_margin_top">9dp</dimen>
+	<dimen name="home_item_1_margin_bottom">9dp</dimen>
+	
+	<dimen name="ratingbar_small_minHeight">9.5dp</dimen>
+	
+	<!-- Add by nnZhang for NecessaryInstall -->
+	<dimen name="necessary_one_key_height">25dp</dimen>
+</resources>

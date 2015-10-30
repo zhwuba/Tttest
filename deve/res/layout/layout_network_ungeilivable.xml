@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/network_ungeilivable" />
+    
+    <TextView 
+        android:id="@+id/conn_no_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#777777"
+        android:textSize="14.5sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/conn_no_network" />
+
+    <Button
+        android:id="@+id/refresh_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:minHeight="0dip"
+        android:minWidth="0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/refresh_btn_bg"
+        android:textSize="@dimen/refresh_btn_size"
+        android:text="@string/menu_refresh"
+        android:textColor="@color/common_app_install_color"
+         />
+
+</LinearLayout>

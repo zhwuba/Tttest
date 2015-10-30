@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false" >
+    
+    <item android:drawable="@drawable/home_title_download1" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download1_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download2" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download2_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download3" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download3_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download4" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download4_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download5" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download5_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download6" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download6_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download7" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download7_half" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download8" android:duration="160"></item>
+    <item android:drawable="@drawable/home_title_download8_half" android:duration="160"></item>
+
+</animation-list>

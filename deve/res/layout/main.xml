@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"  >
+	<TabHost 
+	    android:id="@android:id/tabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <!-- 向导页 -->
+	    <RelativeLayout
+            android:id="@+id/welcome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+	    
+	    <!-- 加载页 -->
+	    <com.market.view.StartUpLayout
+	        android:id="@+id/startup"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" />
+	    
+		<!-- 市场主框架布局 -->
+	    <RelativeLayout
+	        android:id="@+id/main_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	        
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/bottom_tab"
+	            android:layout_alignParentBottom="true"
+	            android:background="@drawable/widget_bg" />
+	        
+	        <!-- <View 
+	            android:id="@+id/tab_line"
+	            android:layout_width="match_parent"
+	            android:layout_height="1px"
+	            android:background="@color/common_bg"
+	            android:layout_above="@android:id/tabs"/> -->
+	        
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_above="@android:id/tabs" />
+	        
+	       <com.market.view.CommonMainTitleView
+                android:id="@+id/common_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_subtitle_bg" />
+	        
+		    <TextView 
+	            android:id="@+id/update_count"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentRight="true"
+	            android:gravity="center"
+	            android:layout_marginBottom="@dimen/update_count_bottom_distance"
+	            android:layout_marginRight="@dimen/update_count_right_distance"
+	            android:background="@drawable/update_count_bg"
+	            android:visibility="gone"
+	            android:text=""
+	            android:textColor="@color/white"
+	            android:textSize="10sp"/>
+	        
+	        <com.market.view.PressInstallButtonAnimView
+	            android:id="@+id/common_download_anim"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:visibility="gone"/>
+	    </RelativeLayout>
+	</TabHost>
+</RelativeLayout>

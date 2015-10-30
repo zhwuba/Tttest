@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/manage_recode_margin"
+    android:layout_marginRight="@dimen/manage_recode_margin"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/rank_list"
+        style="@style/common_scroll_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/manage_recode_margin"
+        android:paddingRight="@dimen/manage_recode_margin"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:paddingTop="@dimen/common_listview_padding_top"
+        android:dividerHeight="@dimen/common_divider_height"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbarSize="@dimen/scroll_width"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbHorizontal="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:clipToPadding="false" />
+
+    <include
+        android:id="@+id/search_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/progress_bar_intern"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/refresh_linearLayout_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/maybelike_no_data"
+            android:textColor="@color/list_item_color" />
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/refresh_btn_bg"
+            android:minHeight="0dip"
+            android:minWidth="0dip"
+            android:text="@string/menu_refresh"
+            android:textColor="@color/common_app_install_color"
+            android:textSize="@dimen/refresh_btn_size" />
+    </LinearLayout>
+
+</RelativeLayout>

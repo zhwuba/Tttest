@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dip"
+    android:gravity="center_vertical" >
+    
+    <ImageView
+        android:id="@+id/notifyImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="13dp"
+        android:scaleType="centerCrop" />
+    
+    <LinearLayout 
+        android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1" >
+	    <TextView
+	        android:id="@+id/tvTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxWidth="@dimen/dm_installed_tip"
+	        android:textSize="18sp"
+	        android:layout_marginLeft="10dp"
+	        android:singleLine="true" />
+	    
+	    <TextView
+	        android:id="@+id/tvTip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:layout_marginLeft="10dp"
+	        android:singleLine="true" />   
+    </LinearLayout>
+        
+    <TextView
+        android:id="@+id/tvOpen"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/notify_update_btn_bg"
+        android:gravity="center"
+        android:textColor="#78ad46"
+        android:textSize="14sp" />
+
+</LinearLayout>

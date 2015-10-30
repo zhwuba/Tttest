@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <!--
+         android:divider="@drawable/diliver"
+        android:dividerHeight="1dip"
+    -->
+
+    <LinearLayout
+        android:id="@+id/nolist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cannot_guess_you_like"
+            android:textColor="@color/list_item_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recommmendation_list"
+        style="@style/common_scroll_style"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/common_listview_margin_top"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="@dimen/onecolview_item_margin"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:clipToPadding="false"
+        android:visibility="gone" >
+    </ListView>
+
+    <com.market.view.SearchLoadingLayout
+        android:id="@+id/search_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/refresh_linearLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        layout="@layout/layout_network_ungeilivable"
+        android:visibility="gone" />
+
+</RelativeLayout>

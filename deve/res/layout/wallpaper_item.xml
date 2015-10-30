@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/wallpaper_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" >
+        <TextView
+	        android:id="@+id/wallpaper_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/wallpaper_category_title_size"
+	        android:layout_gravity="left|bottom"
+	        android:layout_marginLeft="15dip"
+	        android:layout_marginBottom="15dip"
+	        android:visibility="gone" />  
+    </FrameLayout>
+
+        
+</RelativeLayout>

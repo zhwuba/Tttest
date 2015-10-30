@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.market.view.CommonSubtitleView
+            android:id="@+id/title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_subtitle_bg" />
+    </LinearLayout>
+
+    <com.market.view.PressInstallButtonAnimView
+        android:id="@+id/common_download_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

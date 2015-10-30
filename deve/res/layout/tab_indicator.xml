@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:background="@drawable/bottom_button" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView 
+         android:id="@+id/img_indicator" 
+         android:duplicateParentState="true" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:layout_marginTop="@dimen/bottom_tab_img_margin" 
+         android:layout_alignParentTop="true" 
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/tab_recommend_selector" />
+    <TextView 
+        android:textSize="@dimen/bottom_tab_text_size"
+        android:layout_marginTop="@dimen/bottom_tab_text_margin"
+        android:textColor="@drawable/tab_main_text" 
+        android:layout_below="@id/img_indicator"
+        android:id="@+id/txt_indicator" 
+        android:duplicateParentState="true" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"     
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="推荐" />
+    
+    <TextView android:textSize="11.0dip" 
+        android:textColor="@color/bubble_new" 
+        android:gravity="center" 
+        android:id="@+id/txt_bubble" 
+        android:background="@drawable/bubble_oval_new_bg" 
+        android:visibility="gone" 
+        android:layout_width="18.0dip" 
+        android:layout_height="18.0dip" 
+        android:layout_alignTop="@id/img_indicator" 
+        android:layout_alignRight="@id/img_indicator" />
+    
+    <ImageView 
+        android:id="@+id/new_notify" 
+        android:src="@drawable/new_notify" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignTop="@id/img_indicator" 
+        android:layout_toRightOf="@id/img_indicator"
+        android:layout_marginLeft="3px"
+        android:visibility="gone" />
+    
+</RelativeLayout>

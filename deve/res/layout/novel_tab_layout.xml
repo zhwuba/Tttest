@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <com.market.view.CommonSubtitleView
+        android:id="@+id/novel_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_subtitle_bg">
+    </com.market.view.CommonSubtitleView>
+    
+    <com.market.view.PagerSlidingTabStrip
+        android:id="@+id/novel_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_heigh"
+        android:layout_below="@id/novel_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/novel_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_below="@id/novel_tab"
+        android:gravity="center" >
+    </android.support.v4.view.ViewPager>
+    
+    <com.market.view.SearchLoadingLayout
+        android:id="@+id/search_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    
+    <include
+        android:id="@+id/refresh_linearLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_network_ungeilivable"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    
+    <com.market.view.PressInstallButtonAnimView
+        android:id="@+id/common_download_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

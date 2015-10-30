@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check_activity_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.market.view.CommonSubtitleView
+        android:id="@+id/trashTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="@string/home_title_trashclean"
+        android:background="@color/common_subtitle_bg" >
+    </com.market.view.CommonSubtitleView>
+    
+    <com.zhuoyi.market.cleanTrash.TrashAnimView
+        android:id="@+id/trashAnimView"
+        android:layout_width="@dimen/trash_anim_view_height"
+        android:layout_height="@dimen/trash_anim_view_height"
+        android:layout_marginTop="@dimen/trash_anim_view_margin_nomal" >
+    </com.zhuoyi.market.cleanTrash.TrashAnimView>
+    
+    <TextView 
+        android:id="@+id/trashCleanOverTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/trash_clean_over_text_view_margin"
+        android:textSize="@dimen/trash_title_text_size"
+        android:textColor="@color/trash_text_green"
+        android:text="@string/trash_clean_over_text"
+        android:visibility="gone">
+    </TextView>
+    
+    <ExpandableListView
+        android:id="@+id/trashListView" 
+        android:layout_width="@dimen/trash_list_view_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/trash_anim_view_margin_nomal"
+        android:dividerHeight="@dimen/trash_list_divider_height"
+        android:divider="#00000000"
+        android:childDivider="#00000000" >
+    </ExpandableListView>
+    <!-- android:dividerHeight="@dimen/trash_list_divider_height" -->
+    
+    <LinearLayout
+	    android:id="@+id/bottom_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#FFFFFF"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical">
+	    <Button
+	        android:id="@+id/trashBottomBtn"
+	        android:layout_width="@dimen/trash_bottom_button_width"
+	        android:layout_height="@dimen/trash_bottom_button_height"
+	        android:layout_marginTop="@dimen/trash_bottom_button_margin_top"
+	        android:layout_marginBottom="@dimen/trash_bottom_button_margin_bottom"
+	        android:textColor="@color/trash_text_green"
+	        android:textSize="@dimen/trash_bottom_button_text_size"
+	        android:background="@drawable/app_detail_btn_selector" >
+	    </Button>
+    </LinearLayout>
+</LinearLayout>

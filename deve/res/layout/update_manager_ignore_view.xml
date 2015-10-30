@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/app_list_divider_margin"
+        android:layout_marginRight="@dimen/app_list_divider_margin"
+        android:background="@drawable/line" >
+    </View>
+    -->
+
+    <ListView
+        android:id="@+id/update_ignore_list"
+        style="@style/common_scroll_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_listview_margin_top"
+        android:divider="@null"
+        android:dividerHeight="@dimen/onecolview_item_margin"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+    </ListView>
+
+</LinearLayout>

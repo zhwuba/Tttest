@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/category_grid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/category_b_item_text_color"
+        android:textSize="@dimen/category_b_item_sub_text_size"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@drawable/category_b_item_selector"/>
+    
+</LinearLayout>
+    

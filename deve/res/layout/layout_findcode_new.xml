@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+    
+    <com.market.view.CommonSubtitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:tag="@string/forget_code2"
+        android:background="@color/common_subtitle_bg" >
+    </com.market.view.CommonSubtitleView>
+    
+     <RelativeLayout 
+        android:id="@+id/logo_relative"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_logo_height_findcode"
+        >
+         
+    <ImageView 
+        android:id="@+id/logo_findcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/logo_findcode"/>
+    
+     </RelativeLayout>
+     
+     <EditText
+            android:id="@+id/login_name"
+            android:layout_width="@dimen/account_input_box_width"
+            android:layout_height="@dimen/account_input_box_height"
+            android:background="@drawable/account_input_bg"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/support_name"
+            android:inputType="phone"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/account_input_box_padding"
+        	android:paddingRight="@dimen/account_input_box_padding"
+        	android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size"
+            android:textColor="@color/common_text_color"
+            android:typeface="monospace" />
+    
+    <RelativeLayout
+        android:id="@+id/code_linearLayout"
+        android:layout_width="@dimen/account_input_box_width"
+        android:layout_height="@dimen/account_input_box_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/account_input_box_margin"
+        android:orientation="horizontal"
+        android:background="@drawable/account_input_bg"
+        android:paddingLeft="@dimen/account_input_box_padding"
+        android:paddingRight="@dimen/account_input_box_padding" >
+
+        <Button
+            android:id="@+id/register_get_security_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/reg_get_security_code"
+            android:textColor="@drawable/btn_base_text_color"
+            android:textSize="@dimen/account_content_text_size" />
+
+        <EditText
+            android:id="@+id/login_security_code"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/register_get_security_code_btn"
+            android:background="@null"
+            android:enabled="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/input_security_code"
+            android:longClickable="false"
+            android:padding="3dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size"
+            android:textColor="@color/common_text_color"
+            android:typeface="monospace" />
+    </RelativeLayout>
+    
+    <EditText
+            android:id="@+id/login_code"
+            android:layout_width="@dimen/account_input_box_width"
+            android:layout_height="@dimen/account_input_box_height"
+            android:enabled="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/account_input_box_margin"
+            android:focusableInTouchMode="true"
+            android:hint="@string/input_code_new"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/account_input_bg"
+        	android:paddingLeft="@dimen/account_input_box_padding"
+        	android:paddingRight="@dimen/account_input_box_padding"
+            android:singleLine="true"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size"
+            android:textColor="@color/common_text_color"
+            android:typeface="monospace" />
+    
+    <!-- <RelativeLayout
+        android:id="@+id/pass_linearLayout"
+        android:layout_width="@dimen/account_input_box_width"
+        android:layout_height="@dimen/account_input_box_height"
+        android:layout_marginTop="@dimen/account_input_box_margin"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/account_input_bg"
+        android:paddingLeft="@dimen/account_input_box_padding"
+        android:paddingRight="@dimen/account_input_box_padding" >
+
+        <EditText
+            android:id="@+id/login_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/input_code_new"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:textColorHint="@color/account_hint_color"
+            android:textSize="@dimen/account_content_text_size"
+            android:textColor="@color/common_text_color"
+            android:typeface="monospace" />
+    </RelativeLayout> -->
+    
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="@dimen/account_input_box_width"
+        android:layout_height="@dimen/account_input_box_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/account_input_box_margin"
+        android:background="@drawable/btn_base_login"
+        android:onClick="handleLogin"
+        android:text="@string/choose_register_module_my_phonenum"
+        android:textColor="@drawable/btn_base_text_color" 
+        android:textSize="@dimen/account_login_text_size"/>
+
+</LinearLayout>

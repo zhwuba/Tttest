@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/usercenter_view_id"
+    android:background="@color/white"
+    >
+
+     <include
+        android:id="@+id/error_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        layout="@layout/layout_network_ungeilivable"
+        android:visibility="gone" />
+    
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        style="@style/common_scroll_style"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/top_progressBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="visible" />
+
+</FrameLayout>

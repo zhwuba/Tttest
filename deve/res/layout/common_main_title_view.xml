@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_heigh" >
+
+    <!-- logo -->
+
+    <ImageView
+        android:id="@+id/main_title_logo"
+        android:layout_width="@dimen/title_logo_width"
+        android:layout_height="@dimen/title_logo_width"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_logo_margin"
+        android:layout_marginRight="@dimen/title_logo_margin"
+        android:background="@drawable/scale_logo_pressed"
+        android:scaleType="center" />
+
+    <!-- search -->
+
+    <LinearLayout
+        android:id="@+id/home_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_edittext_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/main_title_download"
+        android:layout_toRightOf="@id/main_title_logo"
+        android:background="@drawable/home_search_bar_bg"
+        android:gravity="center_vertical" >
+
+        <com.market.view.AnimTextView
+            android:id="@+id/home_search_animwords"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/animtext_margin_left"
+            android:layout_weight="1"
+            android:text="@string/edit_search_hint" />
+
+        <ImageView
+            android:id="@+id/home_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/main_search_btn_margin"
+            android:src="@drawable/search_title_main" />
+    </LinearLayout>
+
+    <!-- download -->
+
+    <com.market.view.CommonTitleDownloadView
+        android:id="@+id/main_title_download"
+        android:layout_width="@dimen/title_heigh"
+        android:layout_height="@dimen/title_heigh"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+    </com.market.view.CommonTitleDownloadView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/main_title_download" />
+
+</RelativeLayout>

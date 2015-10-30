@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/setting_feedback_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/personalinfo_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_feedback_title_height"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/feedback_tip"
+        android:textColor="@color/common_subtitle_bg"
+        android:textSize="@dimen/setting_feedback_title_text_size" />
+
+    <View
+        android:layout_width="@dimen/setting_feedback_item_width"
+        android:layout_height="0.8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/setting_feedback_linearlayout_margin"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_feedback_linearlayout_margin"
+        android:layout_marginLeft="@dimen/setting_feedback_linearlayout_margin_transverse"
+        android:layout_marginRight="@dimen/setting_feedback_linearlayout_margin_transverse" >
+        
+        <TextView 
+            android:id="@+id/opinionText1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feedback_opinion1"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:drawableLeft="@drawable/setting_feedback_unselected"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"/>
+        <TextView 
+            android:id="@+id/opinionText2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feedback_opinion2"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:drawableLeft="@drawable/setting_feedback_unselected"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"/>
+        <TextView 
+            android:id="@+id/opinionText3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feedback_opinion3"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:drawableLeft="@drawable/setting_feedback_unselected"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_feedback_linearlayout_margin"
+        android:layout_marginLeft="@dimen/setting_feedback_linearlayout_margin_transverse"
+        android:layout_marginRight="@dimen/setting_feedback_linearlayout_margin_transverse" >
+        
+        <TextView 
+            android:id="@+id/opinionText4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feedback_opinion4"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:drawableLeft="@drawable/setting_feedback_unselected"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"/>
+
+        <TextView 
+            android:id="@+id/opinionText5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feedback_opinion5"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:drawableLeft="@drawable/setting_feedback_unselected"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"/>
+        
+        <TextView 
+            android:id="@+id/opinionText6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/feedback_opinion6"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:drawableLeft="@drawable/setting_feedback_unselected"
+            android:drawablePadding="3dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/suggestion"
+        android:layout_width="@dimen/setting_feedback_item_width"
+        android:layout_height="@dimen/setting_feedback_suggestion_edittext_heigth"
+        android:layout_marginBottom="@dimen/setting_feedback_linearlayout_margin"
+        android:layout_marginLeft="@dimen/setting_feedback_margin"
+        android:layout_marginRight="@dimen/setting_feedback_margin"
+        android:background="@drawable/feedback_edit_bg"
+        android:gravity="top"
+        android:textColor="@color/common_text_color"
+        android:textColorHint="@color/account_hint_color"
+        android:hint="@string/feedback_hint"
+        android:padding="2dp"
+        android:textSize="@dimen/setting_feedback_opinion_text_size" />
+
+    <TextView
+        android:id="@+id/contact_tip"
+        android:layout_width="@dimen/setting_feedback_item_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/contact_information_tip"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/setting_feedback_contac_tip_size" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="@dimen/setting_feedback_item_width"
+        android:layout_height="@dimen/setting_feedback_submit_heigth"
+        android:layout_marginBottom="@dimen/setting_feedback_linearlayout_margin_transverse"
+        android:background="@drawable/feedback_edit_bg"
+        android:hint="@string/contact_information_hint"
+        android:padding="2dp"
+        android:textColor="@color/common_text_color"
+        android:textColorHint="@color/account_hint_color"
+        android:textSize="@dimen/setting_feedback_opinion_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_divider_height"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personalinfo_dialog_item_height" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/common_dialog_btn_left_bg"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/personalinfo_tip_color" />
+
+        <View
+            android:layout_width="@dimen/common_divider_height"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/setting_feedback_opinion_text_size"
+            android:background="@drawable/common_dialog_btn_right_bg"
+            android:text="@string/submit"
+            android:textColor="@color/common_green_color" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+   >
+
+        <RatingBar
+            android:id="@+id/rating_star"
+            style="@style/RatingBar.Custom_RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="true" />
+        
+        <TextView 
+            android:id="@+id/rating_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/detail_show_right_text"
+            android:layout_below="@id/rating_star"
+            android:textSize="13sp"
+            />
+        <TextView 
+            android:id="@+id/rating_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_below="@id/rating_content"
+            android:textColor="@color/detail_show_left_text"
+            android:textSize="10sp"
+            />
+        
+        <TextView 
+            android:id="@+id/rating_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_content"
+            android:lines="1"
+            android:textColor="@color/detail_show_left_text"
+            android:textSize="10sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/rating_ver"
+            />
+
+        
+        <TextView 
+            android:id="@+id/rating_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:maxLength="5"
+			android:textColor="@color/detail_show_left_text"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            />
+        
+        <TextView 
+            android:id="@+id/rating_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/detail_show_left_text"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+</RelativeLayout>

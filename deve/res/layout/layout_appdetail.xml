@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/particular_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/base_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_subtitle_bg"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_heigh"
+        android:background="@color/common_subtitle_bg" >
+
+        <com.market.view.CommonTitleDownloadView
+            android:id="@+id/title_download"
+            android:layout_width="@dimen/title_heigh"
+            android:layout_height="@dimen/title_heigh"
+            android:layout_alignParentRight="true" >
+        </com.market.view.CommonTitleDownloadView>
+
+        <ImageView
+            android:id="@+id/subtitle_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/title_download"
+            android:background="@drawable/btn_title_search_state"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/subtitle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_selector" />
+
+        <ImageView
+            android:id="@+id/subtitle_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/subtitle_back"
+            android:src="@drawable/back_divide_line" />
+
+        <TextView
+            android:id="@+id/subtitle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sub_title_name_margin_left"
+            android:layout_toRightOf="@id/subtitle_divider"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/sub_title_margin_right"
+            android:text="@string/app_detail_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_name_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/app_detail_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/common_subtitle_bg" >
+
+            <com.market.view.PagerSlidingTabStrip
+                android:id="@+id/app_detail_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_heigh"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/app_detail_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg"
+            android:layout_below="@id/app_detail_tab_layout"
+            android:paddingBottom="@dimen/particular_bottom_bar_height" >
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:id="@+id/particular_info_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:id="@+id/download_tool_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/particular_bottom_bar_height"
+                android:background="@drawable/detail_download_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/particular_info_detail_favorite_btn"
+                    android:layout_width="@dimen/app_detail_favorite_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_detail_no_favorite" />
+
+                <!-- 一键安装 -->
+
+                <TextView
+                    android:id="@+id/particular_info_detail_download_btn"
+                    android:layout_width="@dimen/app_detail_download_btn_width"
+                    android:layout_height="@dimen/app_detail_favorite_btn_height"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/app_detail_btn_selector"
+                    android:gravity="center"
+                    android:tag="@string/download"
+                    android:text="@string/one_key_install2"
+                    android:textColor="@color/common_app_install_color"
+                    android:textSize="15.83sp" />
+
+                <!-- 评论 -->
+
+                <TextView
+                    android:id="@+id/particular_info_detail_comment_btn"
+                    android:layout_width="@dimen/app_detail_download_btn_width"
+                    android:layout_height="@dimen/app_detail_favorite_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/app_detail_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/app_detail_user_comment"
+                    android:textColor="@color/common_app_install_color"
+                    android:textSize="15.83sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/particular_info_detail_share_btn"
+                    android:layout_width="@dimen/app_detail_favorite_btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_detail_share" />
+            </LinearLayout>
+            <!-- 下载代码实现 -->
+        </FrameLayout>
+        <!-- 加载代码实现 -->
+        <!-- Error代码实现 -->
+    </RelativeLayout>
+</LinearLayout>
