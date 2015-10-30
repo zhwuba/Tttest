@@ -1,0 +1,32 @@
+<resources>
+    <declare-styleable name="Banner">
+        <attr name="pageLayoutWidthGap" format="dimension" />
+        <attr name="pageLayoutHeightGap" format="dimension" />
+        <attr name="pageLayoutPaddingTop" format="dimension" />
+        <attr name="pageLayoutPaddingBottom" format="dimension" />
+        <attr name="pageLayoutPaddingLeft" format="dimension" />
+        <attr name="pageLayoutPaddingRight" format="dimension" />
+        <attr name="pageSpacing" format="dimension" />
+        <attr name="pageSpacingInMiniMode" format="dimension" />
+        <attr name="scrollIndicatorPaddingLeft" format="dimension" />
+        <attr name="scrollIndicatorPaddingRight" format="dimension" />
+    </declare-styleable>
+    
+     <declare-styleable name="HorzontalSliderView">
+        <!-- Sets a drawable as the content of this ImageView. -->
+        <attr name="src" format="reference|color" />
+    </declare-styleable>
+    
+     <declare-styleable name="MultipleSelectionButton">
+        <attr name="ascv_unselectedTextColor" format="reference"/>
+        <attr name="ascv_unselectedColor" format="reference"/>
+        <attr name="ascv_selectedColor" format="reference"/>
+        <attr name="ascv_selectedTextColor" format="reference"/>
+        <attr name="ascv_items" format="reference"/>
+        <attr name="ascv_values" format="reference"/>
+        <attr name="ascv_equalWidth" format="boolean"/>
+        <attr name="ascv_stretch" format="boolean"/>
+        <attr name="ascv_defaultSelection" format="integer"/>
+        <attr name="ascv_identifier" format="string"/>
+    </declare-styleable>
+</resources>

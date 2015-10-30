@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/font_preview_w"
+        android:layout_height="@dimen/font_preview_h"
+        android:background="@drawable/font_back"/>
+
+    <ImageView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/icon"
+        android:layout_alignTop="@id/icon"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/icon"
+        android:layout_alignTop="@id/icon"
+        android:layout_marginTop="@dimen/status_icon_margin_top"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/icon"
+        android:layout_marginBottom="@dimen/font_name_margin_bottom"
+        android:singleLine="true"
+        android:textColor="@color/font_name_text_color"
+        android:textSize="@dimen/font_name_text_size" />
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="@dimen/font_apply_w"
+        android:layout_height="@dimen/font_apply_h"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/font_apply_margin_top"
+        android:layout_below="@id/icon"
+        android:background="@drawable/tab_font_apply"
+        android:focusable="false"/>
+
+</RelativeLayout>

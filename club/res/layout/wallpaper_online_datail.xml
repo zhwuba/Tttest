@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.freeme.themeclub"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/online_detail_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/online_previewMask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/online_titleArea"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:paddingRight="10.0dip" >
+
+        <ImageView
+            android:id="@+id/online_homeAsUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallpaper_detail_navigator" />
+
+        <TextView
+            android:id="@+id/online_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.ActionBar.Title"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.ActionBar.Title"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/online_infoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallpaper_detail_info_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/online_operatorArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.freeme.themeclub.wallpaper.view.HorzontalSliderView
+            android:id="@+id/online_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wallpaper_slider_bg"
+            settings:src="@drawable/wallpaper_slider" />
+
+        <LinearLayout
+            android:id="@+id/online_operationBar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/background"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ImageView
+                    android:id="@+id/share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wallpaper_share_cannot_use" />  
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/online_downloadButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/wallpaper_download_cannot_use"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="@string/resource_download" 
+                        android:textColor="#333333"/>
+
+                    <Button
+                        android:id="@+id/online_applyButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tab_button_big"
+                        android:gravity="center"
+                        android:text="@string/resource_apply"
+                        android:visibility="gone" 
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/delete_cannot_use_wallpaper2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

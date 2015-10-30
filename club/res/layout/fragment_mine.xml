@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/custom_background_color">
+
+    <com.freeme.themeclub.mine.CircleImageView
+        android:id="@+id/photo"
+        android:layout_height="@dimen/photo_size"
+        android:layout_width="@dimen/photo_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/photo_margin_top"
+        android:src="@drawable/photo"/>
+    
+    <ImageView 
+        android:id="@+id/login_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/tab_login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/photo"
+        android:layout_marginTop="@dimen/login_margin_photo"/>
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/photo"
+        android:layout_marginTop="@dimen/login_margin_photo"
+        android:visibility="gone"/>
+    
+    <RelativeLayout 
+        android:id="@+id/cache_area"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="@dimen/divider_margin_login"
+        android:background="@color/account_divider_color"/>
+    
+    <RelativeLayout 
+        android:id="@+id/account_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:layout_below="@id/login_btn"
+        android:layout_marginTop="@dimen/divider_margin_login"
+        android:gravity="center_vertical">
+        
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/account_item_left_margin"
+            android:text="@string/clear_cache"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/primary_text_size"/>
+        
+        <TextView
+            android:id="@+id/cache_size" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/account_item_right_margin"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/secondary_text_size"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/account_item_one"
+        android:background="@color/account_divider_color"/>
+    
+    <RelativeLayout 
+        android:id="@+id/account_item_two"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_item_height"
+        android:layout_below="@id/account_item_one"
+        android:gravity="center_vertical">
+        
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/account_item_left_margin"
+            android:text="@string/version_code"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/primary_text_size"/>
+        
+        <TextView
+            android:id="@+id/version_code" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/account_item_right_margin"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/secondary_text_size"/>
+        
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/version_code"
+            android:text="@string/current_version_code"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/secondary_text_size"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/account_item_two"
+        android:background="@color/account_divider_color"/>
+
+</RelativeLayout>

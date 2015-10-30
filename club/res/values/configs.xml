@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <fraction name="resource_thumbnail_triple_height_vs_width_ratio">156.25%</fraction>
+    <fraction name="resource_thumbnail_double_flat_icon_height_vs_width_ratio">82.569%</fraction>
+
+    <bool name="resource_decode_image_with_low_quality">false</bool>
+
+</resources>

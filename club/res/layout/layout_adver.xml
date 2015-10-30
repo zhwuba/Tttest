@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_adver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/newest_banner_default" >
+
+        <com.freeme.themeclub.banner.AutoScrollLoopBanner
+            android:id="@+id/logo_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  
+            android:layout_centerHorizontal="true" />
+
+        <com.freeme.themeclub.banner.BannerIndicator
+            android:id="@+id/paged_view_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/indicator_padding_bottom"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:id="@+id/purdah"
+		android:background="#ff000000"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageView android:layout_height="fill_parent" android:id="@+id/purdah_left"
+			android:layout_width="fill_parent" android:src="@drawable/purdah_left"></ImageView>
+		<ImageView android:layout_height="fill_parent" android:id="@+id/purdah_right"
+			android:layout_width="fill_parent" android:src="@drawable/purdah_right"></ImageView>
+		
+		<TextView 
+		    android:id="@+id/purdah_text"
+		    android:text="@string/sponsor" 
+			android:typeface="sans"
+			android:textSize="30sp" android:textColor="#fffff94f"
+			android:layout_marginTop="-70dip"
+			android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:shadowColor="#FF000000"
+      android:shadowRadius="6.0"></TextView>
+	</FrameLayout>

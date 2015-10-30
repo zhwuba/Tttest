@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">美化中心</string>
+    <string name="homepage_title">首頁</string>
+    <string name="theme_title">主題</string>
+    <string name="lockscreen_title">鎖屏</string>
+    <string name="wallpaper_title">壁紙</string>
+    <string name="individual_title">我的</string>
+    <string name="font_title">字體</string>
+    <string name="hot_resource">熱門資源</string>
+    <string name="newest">最新</string>
+    <string name="good">精品</string>
+    <string name="popular">人氣</string>
+    <string name="category">分類</string>
+    <string name="theme_detail">主題詳情</string>
+    <string name="apply">應用</string>
+    <string name="theme_in_use">該主題正在使用中</string>
+    <string name="yes_or_no">是否刪除</string>
+    <string name="cancel">取消</string>
+    <string name="share">分享</string>
+    <string name="in_use">正在使用</string>
+    <string name="homepage">首頁</string>
+    <string name="theme">主題</string>
+    <string name="lockscreen">鎖屏</string>
+    <string name="wallpaper">壁紙</string>
+    <string name="font_name_default">默認</string>
+    <string name="font_name_unknow">未知</string>
+    <string name="default_scroll_format">Page %1$d of %2$d</string>
+    <string name="freeme_font_preview_cn">Freeme OS</string>
+    <string name="freeme_font_preview_en">自由，從這裏開始</string>
+    <string name="dido_font_preview_cn">dido OS</string>
+    <string name="dido_font_preview_en">自由，從這裏開始</string>
+    <string name="deleting">正在刪除</string>
+    <string name="designer">設計師：</string>
+    <string name="download_times">次下載</string>
+    <string name="res_intro">資源簡介</string>
+    <string name="you_like">猜妳喜歡</string>
+    <string name="hint">提示</string>
+    <string name="whether_continue">使用移動數據會產生流量費用，是否繼續？</string>
+    <string name="no_show">不再顯示</string>
+    <string name="set_wlan">設置WLAN</string>
+    <string name="go_on">繼續</string>
+    <string name="check_wlan">無法連接網絡，請檢查網絡設置</string>
+    <string name="go_to_set">去設置</string>
+    <string name="set">設置</string>
+    <string name="sponsor">酷，是壹種生活方式</string>
+    <string name="seven_day_theme">七日主題</string>
+    <string name="not_enough_seven">本地主題不足7個，七日自動主題無法開啟</string>
+    <string name="special_wallpaper">個性壁紙</string>
+    <string name="album">相冊</string>
+    <string name="load_font">載入字體</string>
+    <string name="lockscreen_detail">鎖屏詳情</string>
+    <string name="no_name">匿名</string>
+
+    <string-array name="category">
+        <item>主題</item>
+        <item>鎖屏</item>
+        <item>壁紙</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="wallpaper_use">
+        <item>應用到桌面</item>
+        <item>應用到鎖屏</item>
+        <item>同時應用到桌面和鎖屏</item>
+        <item>裁剪</item>
+    </string-array>
+
+    <string name="theme_changing_dialog_title">正在配置</string>
+    <string name="theme_changed_message">配置%1$s成功</string>
+    <string name="theme_changed_failed_message">配置%1$s失敗</string>
+    <string name="theme_description_title_default">默認</string>
+    <string name="theme_description_title_customized">自定義</string>
+    <string name="theme_component_title_wallpaper">桌面壁紙</string>
+    <string name="theme_component_title_lockwallpaper">鎖屏壁紙</string>
+    <string name="theme_component_title_icon">圖標</string>
+    <string name="theme_component_title_lockstyle">鎖屏樣式</string>
+    <string name="theme_component_title_launcher">桌面</string>
+    <string name="theme_component_title_photo_frame">桌面相框</string>
+    <string name="theme_component_title_others">其它</string>
+    <string name="apply_theme_no_select_message">請選擇應用模塊</string>
+    <string name="apply_lockscreen_paper_tips">當前正在使用百變鎖屏，新鎖屏壁紙可能無法看到</string>
+    <string name="theme_import">從SD卡導入主題包</string>
+    <string name="theme_select_others">通過其他程序選擇</string>
+    <string name="third_party_pickers_activity_title">設置%1$s</string>
+    <string name="lockstyle_personal_settings">個性化定制當前鎖屏</string>
+    <string name="component_lockstyle_personal_title">自定義當前鎖屏</string>
+    <string name="wallpaper_settings">壁紙設置</string>
+    <string name="desktop_wallpaper">桌面壁紙</string>
+    <string name="live_wallpaper">動態壁紙</string>
+    <string name="video_wallpaper">視頻壁紙</string>
+    <string name="lockscreen_wallpaper">鎖屏壁紙</string>
+    <string name="change_wallpaper">修改壁紙</string>
+    <string name="component_select_title">已選擇模塊(%1$s)</string>
+    <string name="component_include_title">包含模塊(%1$s)</string>
+    <string name="component_screen_title">包含配套壁紙</string>
+    <string name="resource_fail_to_show">該主題包不包含合適的資源</string>
+    <string name="wrong_title">錯誤</string>
+    <string name="title_local">本地</string>
+    <string name="title_online">在線</string>
+    <string name="title_system_resource">系統自帶</string>
+    <string name="title_download_resource">我的下載</string>
+    <string name="short_ringtone_resource">短鈴聲(&amp;lt;5秒)</string>
+    <string name="resource_preview">預覽</string>
+    <string name="wallpaper_set_as_both">同時設為鎖屏和桌面壁紙</string>
+    <string name="wallpaper_set_as_destop">設為桌面壁紙</string>
+    <string name="wallpaper_set_as_lockscreen">設為鎖屏壁紙</string>
+    <string name="wallpaper_crop">裁剪</string>
+    <string name="wallpaper_loading_text">正在載入壁紙 ...</string>
+    <string name="wallpaper_decoded_error">圖片解析出錯</string>
+    <string name="close">關閉</string>
+    <string name="download_success">下載成功</string>
+    <string name="resource_apply">應用</string>
+    <string name="resource_download">下載</string>
+    <string name="resource_transparent_wallpaper">透明壁紙</string>
+    <string name="description_unknown">未知</string>
+    <string name="description_missed">無</string>
+    <string name="description_designer">設計師：</string>
+    <string name="description_author">制作者：</string>
+    <string name="description_size">大小：</string>
+    <string name="description_uploadtime">更新時間：</string>
+    <string name="description_download">下載次數：</string>
+    <string name="description_version">版本：</string>
+    <string name="description_file">文件名：</string>
+    <string name="description_dimension">尺寸：</string>
+    <string name="resource_title">資源詳情</string>
+    <string name="refresh">刷新</string>
+    <string name="description_name">壁紙名稱：</string>
+    <string name="wallpaper_sort">分類：</string>
+
+    <!-- online wallpaper style -->
+    <string name="wallpaper_all">全部</string>
+    <string name="wallpaper_style_scenery">風景</string>
+    <string name="wallpaper_style_beauty">美女</string>
+    <string name="wallpaper_style_originality">創意</string>
+    <string name="wallpaper_style_cartoon">卡通</string>
+    <string name="wallpaper_style_other">其他</string>
+    <string name="wallpaper_order">排序：</string>
+    <string name="order_time">最近更新</string>
+    <string name="download_num">熱門下載</string>
+    <string name="no_more_data">沒有更多了</string>
+    <string name="narrow_pic">窄幅</string>
+    <string name="wide_pic">寬幅</string>
+    <string name="memory_erro">外部存儲正在使用或移除，無法獲取已下載壁紙信息</string>
+    <string name="download_fail">下載失敗</string>
+    <string name="live_wallpaper_picker_title" msgid="4811278937634144675">"選擇動態壁紙"</string>
+    <string name="live_wallpaper_picker_label" msgid="3218000114890071946">"動態壁紙"</string>
+    <string name="live_wallpaper_preview_title" msgid="1130080613611954763">"動態壁紙預覽"</string>
+    <string name="configure_wallpaper" msgid="7396598925806288258">"設置..."</string>
+    <string name="wallpaper_instructions" msgid="4215640646180727542">"設置壁紙"</string>
+    <string name="live_wallpaper_empty" msgid="4278728108785853407">"無動態壁紙。"</string>
+    <string name="set_live_wallpaper" msgid="2381437614949033266">"設置壁紙"</string>
+    <string name="wallpaper_title_and_author" msgid="8891734217843935304">"<xliff:g id="TITLE">%1$s</xliff:g>提供者：<xliff:g id="AUTHOR">%2$s</xliff:g>"</string>
+    <string name="live_wallpaper_loading" msgid="2488371303130330734">"正在加載動態壁紙…"</string>
+    <string name="wallpaper_cancel" msgid="7340240618834119228">"取消"</string>
+    <string name="update_self_forceDialog_title">版本更新</string>
+    <string name="update_self_forceDialog_content">為了正常使用美化中心，必須更新到新版本</string>
+    <string name="update_self_dialog_confirm_btn">更新</string>
+    <string name="update_self_dialog_cancel_btn">取消</string>
+    <string name="update_networktip_title">數據流量提醒</string>
+    <string name="update_self_networktip_content">此次Freeme新聞插件的版本更新將產生較多數據流量，是否繼續更新（建議使用wifi）？</string>
+    <string name="update_networktip_yes">繼續</string>
+    <string name="update_networktip_no">取消</string>
+    <string name="update_self_dialog_content">發現新版本，您可以點擊更新</string>
+    <string name="activity_not_found">應用未安裝</string>
+    <string name="update_self_dialog_title">版本更新</string>
+    <string name="is_applying_wallpaper">正在應用壁紙請稍等...</string>
+    <string name="delete_wallpaper_tips">妳確定要刪除這個壁紙？</string>
+    <string name="seven_theme">七日主題</string>
+    <string name="wait_to_load">請等待主題加載完成後再試</string>
+    <string name="share_lockscreen_message_left">這款</string>
+    <string name="share_lockscreen_message_right">鎖屏超難解鎖，夠安全！畫面獨壹無二，最拉轟！還能私人定制，太酷炫！這樣的鎖屏壹定要炫耀壹下！</string>
+    <string name="share_theme_message_left">我剛剛更換了</string>
+    <string name="share_theme_message_right">主題，生活要五顏六色，手機要貌美如花，推薦妳也看看，美美噠！</string>
+    <string name="share_wallpaper_message">自由從這裏開始，百變壁紙，百變由我，這裏有張超酷炫的壁紙，妳也來下載吧！</string>
+    <string name="thememanager_title">主題</string>
+    <string name="maybelike_no_data">請檢查網絡\n&#160;&#160;點擊刷新</string>
+    <string name="no_data">網絡連接不成功，請檢查網絡</string>
+    <string name="no_network">無法連接網絡,請檢查網絡設置</string>
+    <string name="no_connect">網絡故障</string>
+    <string name="no_connect_hint">獲取數據失敗，建議稍後重試</string>
+    <string name="no_data_errors">無法獲取此應用的詳細信息</string>
+    <string name="no_space_errors">沒有存儲空間,無法下載或安裝</string>
+    <string name="get_data_error">網絡連接服務器發生錯誤,請稍後重試</string>
+    <string name="now_exceed_count">已超過下載數量，請稍後再試哦</string>
+    <string name="now_downloading">此主題已經在下載中</string>
+    <string name="fileException">文件獲取異常，請刪除後重新下載</string>
+    <string name="cardException">存儲卡空間不足或網絡不穩定</string>
+    <string name="Surplus">剩余 :</string>
+    <string name="file_no_exsit">文件不存在</string>
+    <string name="detail_delete_title">刪除主題</string>
+    <string name="detail_delete_info">是否刪除正在下載的主題?</string>
+    <string name="detail_delete_download">是否刪除已下載的主題</string>
+    <string name="loading">正在加載</string>
+    <string name="introduction_install_complete">下載任務已完成！</string>
+    <string name="introduction_click_to_see">點擊查看</string>
+    <string name="installing">下載完成</string>
+    <string name="uninstalling">正在刪除,請稍等...</string>
+    <string name="get_info">正在獲取數據請稍等...</string>
+    <string name="install">安裝</string>
+    <string name="download">下載</string>
+    <string name="uninstall">卸載</string>
+    <string name="not_login">您尚未登錄，請先登錄！</string>
+    <string name="not_member">您還不是白金會員，沒有上傳權限！</string>
+    <string name="delete_theme">刪除主題</string>
+    <string name="delete_lockscreen">刪除鎖屏</string>
+    <string name="theme_is_using">正在使用當前主題，請切換到其他主題再刪除。</string>
+    <string name="lockscreen_is_using">正在使用當前鎖屏，請切換到其他鎖屏再刪除。</string>
+    <string name="up_load">上傳主題</string>
+    <string name="ok">確定</string>
+    <string name="download_is_pause">後臺下載已啟動</string>
+    <!-- added by daichegyuan 20130914 for firstPage at viewPager -->
+    <string name="detail_information">資源詳情</string>
+    <string name="theme_name">主題名稱:</string>
+    <string name="producers">制作者:</string>
+    <string name="size">大小:</string>
+    <string name="version">版本:</string>
+    <string name="download_count">下載次數:</string>
+    <string name="start">開始</string>
+    <string name="stop">暫停</string>
+    <string name="delete">刪除</string>
+    <!-- tyd -->
+
+    <string name="online_installing">正在安裝，請稍等...</string>
+    <string name="uninstall_theme_tips">妳確定要卸載這個主題？</string>
+    <string name="uninstall_lockscreen_tips">妳確定要卸載這個鎖屏？</string>
+    <string name="system_app_tips">系統軟件不可卸載</string>
+    <string name="install_intro">說明</string>
+    <string name="install_intro_title">如何安裝字體</string>
+    <string name="install_intro_info">請復制字體文件到默認SD卡的fonts文件夾，註意文件名不能包含中文和空格，後綴名為.ttf。</string>
+    <string name="sd_font_notfound">沒有可安裝的字體</string>
+    <string name="fontinstall_title">安裝字體</string>
+    <string name="seven_theme_on">七日自動主題功能已開啟</string>
+    <string name="seven_theme_off">七日自動主題功能已關閉</string>
+
+    <string name="resource_manager_title">資源管理</string>
+    <string name="title_activity_resourcemanager">資源管理</string>
+    <string name="system_wallpaper">系統壁紙</string>
+    <string name="choose_wallpaper">選擇壁紙</string>
+    <string name="search">搜索</string>
+    <string name="title_activity_search">搜索</string>
+    <string name="search_hint">搜妳想搜</string>
+    <string name="seven_theme_sponsor">每天壹套主題，每天壹種心情</string>
+    <string name="clear_cache">清除緩存</string>
+    <string name="version_code">版本號</string>
+    <string name="current_version_code">當前版本：</string>
+    <string name="change_account">更換賬號</string>
+    <string name="login_now">立即登錄</string>
+    <string name="login_message_left">檢測到</string>
+    <string name="login_message_right">賬號，使用已有賬號登錄？</string>
+    <string name="unknow_version">未知</string>
+    <string name="uses_times">人使用</string>
+    
+    <string name="share_freeme_item_title">分享Freeme OS</string>
+    <string name="share_freeme_extra_title">"美化中心：手機變更美"</string>
+    <string name="share_freeme_extra_summary">"我剛剛更換了主題，生活要五顏六色，手機要貌美如花，妳也快來看，美美噠！"</string>
+    <string name="share_freeme_extra_url">"http://weixin.droi.com/share/beautifyCenter.html"</string>
+    <string name="share_freeme_extra_image_url">"http://weixin.droi.com/share/images/icon/icon_beautify.png"</string>
+    <string name="all">全部</string>
+</resources>

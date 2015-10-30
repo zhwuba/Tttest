@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="min_len_for_fling">12.5dip</dimen>
+    <dimen name="touch_slop">8.0dip</dimen>
+    <dimen name="drift_slop">3.0dip</dimen>
+    <dimen name="header_logo_margin_top">20dip</dimen>
+    <dimen name="indicator_margin">4dp</dimen>
+    <dimen name="indicator_width">6dp</dimen>
+    <dimen name="indicator_hight">6dp</dimen>
+    <dimen name="viewpager_margin">15dp</dimen>
+    <dimen name="two_floors_action_bar_height">46.0dip</dimen>
+    <dimen name="resource_thumbnail_gap">0dip</dimen> <!-- 2.667 -->
+    <dimen name="wallpaper_loading_text_size">12sp</dimen>
+    <dimen name="thumb_preview_w">105dp</dimen>
+    <dimen name="thumb_preview_h">150dp</dimen>
+    <dimen name="wide_thumb_preview_w">168dp</dimen>
+    <dimen name="wide_thumb_preview_h">150dp</dimen>
+    <dimen name="theme_progress">52dp</dimen>
+    <dimen name="loading_progress">30dp</dimen>
+    <dimen name="detail_preview_w">217dp</dimen>
+    <dimen name="detail_preview_h">386dp</dimen>
+    <dimen name="theme_preview_w">105dp</dimen>
+    <dimen name="theme_preview_h">187dp</dimen>
+    <dimen name="download_bar_h">60dp</dimen>
+    <dimen name="wallpaper_preview_h">150dp</dimen>
+
+</resources>
