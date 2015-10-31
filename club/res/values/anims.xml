@@ -1,18 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <item name="android_slide_out_down" type="anim">@*android:anim/slide_out_down</item>
-    <item name="android_slide_in_right" type="anim">@*android:anim/slide_in_right</item>
-    <item name="android_slide_out_left" type="anim">@*android:anim/slide_out_left</item>
-    <item name="android_push_up_in" type="anim">@*android:anim/push_up_in</item>
-    <item name="android_push_down_out" type="anim">@*android:anim/push_down_out</item>
-    <item name="android_slide_in_up" type="anim">@*android:anim/slide_in_up</item>
-    <item name="android_push_up_out" type="anim">@*android:anim/push_up_out</item>
-    <item name="android_push_down_in" type="anim">@*android:anim/push_down_in</item>
-    <item name="android_grow_fade_in_from_bottom" type="anim">@*android:anim/grow_fade_in_from_bottom</item>
-    <item name="android_shrink_fade_out_from_bottom" type="anim">@*android:anim/shrink_fade_out_from_bottom</item>
-    <item name="android_wallpaper_open_enter" type="anim">@*android:anim/wallpaper_open_enter</item>
-    <item name="android_wallpaper_open_exit" type="anim">@*android:anim/wallpaper_open_exit</item>
-    <item name="android_wallpaper_close_enter" type="anim">@*android:anim/wallpaper_close_enter</item>
-    <item name="android_wallpaper_close_exit" type="anim">@*android:anim/wallpaper_close_exit</item>
-</resources>
